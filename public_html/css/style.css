@@ -1,5 +1,48 @@
 body {
     
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000
+    
+}
+
+#center {
+    
+    position: relative;
+    top: 6%;
+    left: 27%;
+    width: 45%;
+        
+}
+
+#record-img {
+
+    width: 100%;
+    
+}
+
+#social-links {
+    
+    position: relative;
+    bottom: -3%;
+    right: 3%;
+    color: white;
+    font-size: 2.0vw;
+    text-align: right;
+    letter-spacing: 0.3vw;
+
+}
+
+a {
+    
+    text-decoration: none;
+    color: inherit
+    
+}
+
+a:hover, a:focus {
+    
+    color: lightgray;
+    text-decoration: none;
     
 }
