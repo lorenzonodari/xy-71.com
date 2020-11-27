@@ -1,3 +1,10 @@
+@font-face {
+    
+    font-family: "Futura";
+    src: url("../fonts/FuturaMedium.ttf")
+        
+}
+
 @media (orientation: portrait) {
  
     html {
@@ -39,9 +46,15 @@
 
     .social-icon {
 
-        max-width: 75%;
+        max-width: 70%;
 
     }   
+    
+    .side-text {
+        
+        visibility: hidden;
+        
+    }
 
 }
 
@@ -63,7 +76,9 @@
     }
 
     #record-img {
-
+        
+        box-sizing: border-box;
+        padding-top: 3%;
         height: 80%;
 
     }
@@ -74,18 +89,52 @@
         height: 15%;
         margin: 0px;
         padding-top: 2%;
-        padding-right: 5%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
 
     }
 
 
     .social-icon {
 
-        max-width: 75%;
+        max-width: 70%;
 
-    }   
+    }  
+    
+    .side-text {
+        
+        transform: rotate(90deg);
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        
+    }
+    
+    .side-text:focus, .side-text:hover {
+        
+        color: lightgray;
+        
+    }
+    
+    #side-text-r {
+     
+        right: -5%;
+          
+    }
+    
+    #side-text-l {
+
+        left: -3.5%;
+   
+    }
+    
+}
+
+body {
+    
+    color: white;
+    font-size: 2em;
+    font-family: "Futura";
     
 }
 
@@ -97,7 +146,8 @@
 
 #ra-icon {
 
-    padding-top: 5%;
+    max-width: 65%;
+    padding-top: 7%;
 
 }
 
