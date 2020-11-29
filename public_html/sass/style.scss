@@ -1,3 +1,5 @@
+$link_border_style: 3px solid white;
+
 @font-face {
     
     font-family: "Futura";
@@ -104,7 +106,8 @@
     .side-text {
         
         transform: rotate(90deg);
-        text-transform: uppercase;
+        padding: 1.5%;
+        // text-transform: uppercase;
         position: absolute;
         top: 50%;
         
@@ -112,14 +115,16 @@
     
     .side-text:focus, .side-text:hover {
         
-        color: lightgray;
+        border: $link_border_style;
+        background-image: linear-gradient(to bottom, black, white);
+        
         
     }
     
     #side-text-r {
      
         right: -5%;
-          
+             
     }
     
     #side-text-l {
@@ -162,6 +167,6 @@ a > img:hover, a > img:focus {
 
     text-decoration: none;
     color: inherit;
-    border-bottom: 3px white solid;
+    border-bottom: $link_border_style
 
 }
