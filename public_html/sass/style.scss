@@ -1,10 +1,55 @@
-$link_border_style: 3px solid white;
+$link_border_width: 3px;
+$link_border_style: $link_border_width solid white;
 
 @font-face {
     
     font-family: "Futura";
-    src: url("../fonts/FuturaMedium.ttf")
+    src: url("../fonts/FuturaMedium.ttf");
         
+}
+
+
+body {
+    
+    color: white;
+    font-family: "Futura";
+    font-size: 2em;
+    
+}
+
+.social-icon {
+
+    padding-bottom: 3%;
+
+}
+
+#ra-icon {
+
+    max-width: 65%;
+    padding-top: 7%;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+a > img:hover, a > img:focus {
+
+    text-decoration: none;
+    color: inherit;
+    border-bottom: $link_border_style
+
+}
+
+.side-text:focus, .side-text:hover {
+
+    border: $link_border_style;
+    margin: -$link_border_width;
+
 }
 
 @media (orientation: portrait) {
@@ -21,7 +66,7 @@ $link_border_style: 3px solid white;
         width: 100%;
         margin: 0px;
         text-align: center;
-
+        font-size: 1.5em;
 
     }
 
@@ -54,7 +99,9 @@ $link_border_style: 3px solid white;
     
     .side-text {
         
-        visibility: hidden;
+        position: relative;
+        top: -1em;
+        padding: 2%;
         
     }
 
@@ -113,14 +160,6 @@ $link_border_style: 3px solid white;
         
     }
     
-    .side-text:focus, .side-text:hover {
-        
-        border: $link_border_style;
-        background-image: linear-gradient(to bottom, black, white);
-        
-        
-    }
-    
     #side-text-r {
      
         right: -5%;
@@ -133,40 +172,4 @@ $link_border_style: 3px solid white;
    
     }
     
-}
-
-body {
-    
-    color: white;
-    font-size: 2em;
-    font-family: "Futura";
-    
-}
-
-.social-icon {
-
-    padding-bottom: 3%;
-
-}
-
-#ra-icon {
-
-    max-width: 65%;
-    padding-top: 7%;
-
-}
-
-a {
-
-    text-decoration: none;
-    color: inherit;
-
-}
-
-a > img:hover, a > img:focus {
-
-    text-decoration: none;
-    color: inherit;
-    border-bottom: $link_border_style
-
 }
